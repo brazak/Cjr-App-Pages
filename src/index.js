@@ -1,17 +1,21 @@
 import React from 'react';
+import {render} from 'react-dom';
 import ReactDOM from 'react-dom';
+// import * as serviceWorker from './serviceWorker';
 import './index.css';
-import App from './App';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import Layout from './pages/Layout';
+import './style/theme.css';
 
 ReactDOM.render(
+    
   <React.StrictMode>
     <App />
+    <Layout></Layout>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// serviceWorker.unregister();
 reportWebVitals();
